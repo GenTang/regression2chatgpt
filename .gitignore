@@ -10,7 +10,7 @@
 *.lprof
 *.swp
 *.swo
+.ipynb_checkpoints
 .DS_Store
 build
 logs
-ch04-linear/linear_model
