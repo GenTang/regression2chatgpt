@@ -5,6 +5,7 @@
 
 
 from graphviz import Digraph
+import math
 
 
 class Scalar:
