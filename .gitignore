@@ -5,6 +5,7 @@
 *~
 .#*
 *.dot
+*.svg
 *.png
 *.zip
 *.lprof
