@@ -1,7 +1,7 @@
 # -*- coding: UTF-8 -*-
-"""
+'''
 此脚本用于定义游戏以及相应的可视化工具
-"""
+'''
 
 
 import matplotlib.pyplot as plt
@@ -41,7 +41,7 @@ class Lottery:
 
 def plot_values(v):
     # 为在Matplotlib中显示中文，设置特殊字体
-    plt.rcParams["font.sans-serif"] = ["SimHei"]
+    plt.rcParams['font.sans-serif'] = ['SimHei']
     # 正确显示负号
     plt.rcParams['axes.unicode_minus'] = False
     plt.rcParams.update({'font.size': 13})
@@ -50,14 +50,14 @@ def plot_values(v):
     v = pd.DataFrame(v)
     for k in v:
         v[k].plot(label=k, legend=True)
-    legend = plt.legend(shadow=True, loc="best", fontsize=20)
+    legend = plt.legend(shadow=True, loc='best', fontsize=20)
     plt.yticks(range(-10, 11, 4))
     return fig
 
 
 def plot_action_probs(v):
     # 为在Matplotlib中显示中文，设置特殊字体
-    plt.rcParams["font.sans-serif"] = ["SimHei"]
+    plt.rcParams['font.sans-serif'] = ['SimHei']
     # 正确显示负号
     plt.rcParams['axes.unicode_minus'] = False
     plt.rcParams.update({'font.size': 13})
@@ -67,5 +67,5 @@ def plot_action_probs(v):
     for k in v:
         # 在图中画出抽奖的概率
         v[k].apply(lambda x: x[1]).plot(label=k, legend=True)
-    legend = plt.legend(shadow=True, loc="best", fontsize=20)
+    legend = plt.legend(shadow=True, loc='best', fontsize=20)
     return fig

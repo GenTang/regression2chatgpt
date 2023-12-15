@@ -1,7 +1,7 @@
 # -*- coding: UTF-8 -*-
-"""
+'''
 此脚本用于实现viterbi算法
-"""
+'''
 
 
 import numpy as np
@@ -9,7 +9,7 @@ from sklearn.utils.extmath import safe_sparse_dot
 
 
 def viterbi(obs, init_prob, trans_prob, emit_prob):
-    """
+    '''
     viterbi算法
 
     参数
@@ -31,7 +31,7 @@ def viterbi(obs, init_prob, trans_prob, emit_prob):
     score : {np.array}，维度为(样本数，状态数)，viterbi算法中间概率
 
     path : {np.array}，维度为(样本数)，最终结果表示每个样本的隐藏状态
-    """
+    '''
     sample_num, state_num = obs.shape[0], init_prob.shape[0]
     backp = np.empty((sample_num, state_num), dtype=np.intp)
     score = safe_sparse_dot(obs, emit_prob.T)
