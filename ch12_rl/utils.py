@@ -12,6 +12,7 @@ import pandas as pd
 class Lottery:
     
     def __init__(self):
+        # 定义游戏的两个状态
         self.params = {
             'w': (1, 1),
             'l': (-1, 1)
@@ -64,6 +65,7 @@ def plot_action_probs(v):
     fig = plt.figure(figsize=(6, 6), dpi=100)
     v = pd.DataFrame(v)
     for k in v:
+        # 在图中画出抽奖的概率
         v[k].apply(lambda x: x[1]).plot(label=k, legend=True)
     legend = plt.legend(shadow=True, loc="best", fontsize=20)
     return fig
