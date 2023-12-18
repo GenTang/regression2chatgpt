@@ -1,5 +1,5 @@
 
-|代码|说明|
+|Directory|Description|
 |---|---|
 |[char_gpt.ipynb](char_gpt.ipynb)| Creating GPT-2 from scratch and conducting autoregressive learning for python script (predict the next char based on context) |
 |[gpt2.ipynb](gpt2.ipynb)| Usage of open-souce GPT-2 model |
