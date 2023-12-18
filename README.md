@@ -1,24 +1,25 @@
-# 《概率之舞：从模型到语言的人工智能征程》配套代码
+# *The Dance of Probability: A Journey from Models to Language in Artificial Intelligence*
 
-本书正在编辑之中，不久就会面市。
+This book is currently in the editing process and will be available soon.
 
-## 简要说明
+## Description
 
-对于人工智能的经典模型，第三方开源工具都提供了封装良好的实现，使用它们并不复杂。然而，这些开源工具出于工程化的考虑，在代码中引入了过多的封装和细节，使得理解模型的核心结构变得困难。为帮助读者更好地掌握模型原理，本书特别投入较大精力重新实现了模型的核心部分，并附有详细注释。有时候，用人类的语言描述一些精妙的算法处理需要较大篇幅，而且效果也不尽如人意。相比之下，阅读代码则变得直观清晰。
+For classic models in AI(artificial intelligence), the tools, such as PyTorch, have provided well-encapsulated implementations, making their usage relatively straightforward. However, due to engineering considerations, these implementations introduce excessive  details into the code, complicating model understanding. This book aims to enhance reader comprehension by re-implementing core model parts with detailed annotations. While explaining complex algorithms in human language can be challenging, reading the code proves more intuitive.
 
-这份代码依赖于多个第三方库，相关的安装命令已经在相应脚本的开头提供。按照给定的顺序运行这些脚本即可。由于涉及随机数，重新运行可能会得到稍有不同的结果，但整体影响不大。值得注意的是，与大语言模型相关的代码需要在GPU上运行，否则计算时间将显著增加。
+The code relies on external libraries, with installation commands given at the beginning of the  scripts. Rerunning might yield slight result variations due to random numbers, but the overall impact is minimal. For large language models, running the code on a GPU is crucial to avoid a significant increase in computation time.
 
-## 代码目录
+
+## Outline
 ```
-- ch03_linear: 线性回归
-- ch04_logit: 逻辑回归
-- ch05_econometrics: 计量经济学的启示
-- ch06_optimizer: 最优化算法
-- ch07_autograd: 反向传播
-- ch08_mlp: 多层感知器
-- ch09_cnn: 卷积神经网络
-- ch10_rnn: 循环神经网络
-- ch11_llm: 大语言模型
-- ch12_rl: 强化学习
-- ch13_others: 其他经典模型
+- ch03_linear: Linear Regression
+- ch04_logit: Logistic Regression
+- ch05_econometrics: Insights from Econometrics
+- ch06_optimizer: Optimization Algorithms
+- ch07_autograd: Backpropagation
+- ch08_mlp: Multilayer perceptron
+- ch09_cnn: Convolutional Neural Network
+- ch10_rnn: Recurrent Neural Network
+- ch11_llm: Large Languague Model
+- ch12_rl: Reinforcement Learning
+- ch13_others: Other Classic Models
 ```	
