@@ -9,16 +9,15 @@
 这份代码依赖于多个第三方库，相关的安装命令已经在相应脚本的开头提供。按照给定的顺序运行这些脚本即可。由于涉及随机数，重新运行可能会得到稍有不同的结果，但整体影响不大。值得注意的是，与大语言模型相关的代码需要在GPU上运行，否则计算时间将显著增加。
 
 ## 代码目录
-```
-- ch03_linear: 线性回归
-- ch04_logit: 逻辑回归
-- ch05_econometrics: 计量经济学的启示
-- ch06_optimizer: 最优化算法
-- ch07_autograd: 反向传播
-- ch08_mlp: 多层感知器
-- ch09_cnn: 卷积神经网络
-- ch10_rnn: 循环神经网络
-- ch11_llm: 大语言模型
-- ch12_rl: 强化学习
-- ch13_others: 其他经典模型
-```	
+
+- [ch03_linear](ch03_linear): 线性回归
+- [ch04_logit](ch04_logit): 逻辑回归
+- [ch05_econometrics](ch05_econometrics): 计量经济学的启示
+- [ch06_optimizer](ch06_optimizer): 最优化算法
+- [ch07_autograd](ch07_autograd): 反向传播
+- [ch08_mlp](ch08_mlp): 多层感知器
+- [ch09_cnn](ch09_cnn): 卷积神经网络
+- [ch10_rnn](ch10_rnn): 循环神经网络
+- [ch11_llm](ch11_llm): 大语言模型
+- [ch12_rl](ch12_rl): 强化学习
+- [ch13_others](ch13_others): 其他经典模型
