@@ -10,16 +10,15 @@ The code relies on external libraries, with installation commands given at the b
 
 
 ## Outline
-```
-- ch03_linear: Linear Regression
-- ch04_logit: Logistic Regression
-- ch05_econometrics: Insights from Econometrics
-- ch06_optimizer: Optimization Algorithms
-- ch07_autograd: Backpropagation
-- ch08_mlp: Multilayer perceptron
-- ch09_cnn: Convolutional Neural Network
-- ch10_rnn: Recurrent Neural Network
-- ch11_llm: Large Languague Model
-- ch12_rl: Reinforcement Learning
-- ch13_others: Other Classic Models
-```	
+
+- [ch03_linear](ch03_linear): Linear Regression
+- [ch04_logit](ch04_logit): Logistic Regression
+- [ch05_econometrics](ch05_econometrics): Insights from Econometrics
+- [ch06_optimizer](ch06_optimizer): Optimization Algorithms
+- [ch07_autograd](ch07_autograd): Backpropagation
+- [ch08_mlp](ch08_mlp): Multilayer perceptron
+- [ch09_cnn](ch09_cnn): Convolutional Neural Network
+- [ch10_rnn](ch10_rnn): Recurrent Neural Network
+- [ch11_llm](ch11_llm): Large Languague Model
+- [ch12_rl](ch12_rl): Reinforcement Learning
+- [ch13_others](ch13_others): Other Classic Models
