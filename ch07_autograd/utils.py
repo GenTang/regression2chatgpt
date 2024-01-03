@@ -187,7 +187,7 @@ def _get_node_attr(node, direction='forward'):
     def _forward_attr():
         if node_type == 'param':
             node_text = f'{{ grad=None | value={node.value: .2f} | {node.label}}}'
-            return dict(label=node_text, shape='record', fontsize='10', fillcolor='springgreen', style='filled, bold')
+            return dict(label=node_text, shape='record', fontsize='10', fillcolor='lightgreen', style='filled, bold')
         elif node_type == 'computation':
             node_text = f'{{ grad=None | value={node.value: .2f} | {node.op}}}'
             return dict(label=node_text, shape='record', fontsize='10', fillcolor='gray94', style='filled, rounded')
