@@ -1,11 +1,5 @@
 # Companion Code for *Deconstructing Large Language Models: From Linear Regression to Artificial General Intelligence*
 
-Purchase: [JD.com](https://item.jd.com/14596264.html)
-
-The book also includes a free companion video course on [Bilibili](https://space.bilibili.com/417265639/channel/collectiondetail?sid=3138772).
-
-If you have praise, suggestions, or criticism for the book, please share your thoughts on [Douban](https://book.douban.com/subject/36873291/). Thank you again.
-
 ## Introduction
 
 Well-designed implementations of classic artificial intelligence models are readily available in third-party open-source libraries, and using them is not difficult. For engineering reasons, however, these libraries introduce so many layers of abstraction and implementation details that the core structure of a model can be hard to understand. To help readers grasp the underlying principles, this book devotes considerable effort to reimplementing the essential parts of each model and annotating them in detail. Describing a subtle algorithm in human language can take a great deal of space and still fail to convey it clearly. Reading the code, by contrast, often makes the idea intuitive and transparent.
