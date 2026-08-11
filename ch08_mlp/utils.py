@@ -1,6 +1,6 @@
 # -*- coding: UTF-8 -*-
 '''
-定义多层感知器的模型组件，比如线性模型，Sigmoid函数等
+Define multilayer-perceptron components such as linear layers and sigmoid functions
 '''
 
 
@@ -13,8 +13,8 @@ class Linear:
     
     def __init__(self, in_features, out_features, bias=True):
         '''
-        模型参数初始化
-        需要注意的是，此次故意没做参数初始化的优化
+        Initialize model parameters
+        Note that parameter initialization is intentionally left unoptimized here
         '''
         self.weight = torch.randn((in_features, out_features))
         self.bias = torch.randn(out_features) if bias else None
@@ -27,9 +27,9 @@ class Linear:
     
     def parameters(self):
         '''
-        返回线性模型的参数，主要用于参数迭代更新
-        由于PyTorch的计算单元就是张量，
-        所以此次只需将不同参数简单合并成列表即可
+        Return the linear-layer parameters for iterative updates
+        Because tensors are PyTorch's computational units,
+        Therefore, simply combine the different parameters into a list
         '''
         if self.bias is not None:
             return [self.weight, self.bias]
@@ -44,7 +44,7 @@ class Sigmoid:
     
     def parameters(self):
         '''
-        Sigmoid函数没有模型参数
+        The sigmoid function has no model parameters
         '''
         return []
 
@@ -57,7 +57,7 @@ class Tanh:
     
     def parameters(self):
         '''
-        Tanh函数没有模型参数
+        The tanh function has no model parameters
         '''
         return []
 
@@ -75,13 +75,13 @@ class Sequential:
     
     def parameters(self):
         '''
-        将各层的模型参数简单合并成列表即可
+        Combine the model parameters from all layers into a list
         '''
         return [p for layer in self.layers for p in layer.parameters()]
     
     def predict_proba(self, x):
         '''
-        为了数据可视化，计算模型输出的概率
+        Calculate model-output probabilities for visualization
         '''
         if isinstance(x, np.ndarray):
             x = torch.tensor(x).float()

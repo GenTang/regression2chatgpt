@@ -1,6 +1,6 @@
 # -*- coding: UTF-8 -*-
 '''
-此脚本用于实现viterbi算法
+This script implements the Viterbi algorithm
 '''
 
 
@@ -10,27 +10,27 @@ from sklearn.utils.extmath import safe_sparse_dot
 
 def viterbi(obs, init_prob, trans_prob, emit_prob):
     '''
-    viterbi算法
+    Viterbi algorithm
 
-    参数
+    Parameters
     ----
-    obs : {np.array 或者scipy.sparse.csr_matrix}，维度为(样本数，特征数)，
-        数据的特征矩阵
+    obs : {np.array or scipy.sparse.csr_matrix}, shape (number of samples, number of features),
+        Feature matrix of the data
 
-    initProb : {np.array或者scipy.sparse.csr_matrix}，维度为(状态数)，
-        表示各状态的初始分布
+    initProb : {np.array or scipy.sparse.csr_matrix}, shape (number of states),
+        Initial distribution over states
 
-    transProb : {np.array或者scipy.sparse.csr_matrix}，维度为(状态数，状态数)，
-        状态间的转移矩阵
+    transProb : {np.array or scipy.sparse.csr_matrix}, shape (number of states, number of states),
+        State-transition matrix
 
-    emitProb : {np.array或者scipy.sparse.csr_matrix}，维度为(状态数，特征数)，
-        各状态下，特征的条件概率
+    emitProb : {np.array or scipy.sparse.csr_matrix}, shape (number of states, number of features),
+        Conditional feature probabilities for each state
 
-    返回
+    Returns
     ----
-    score : {np.array}，维度为(样本数，状态数)，viterbi算法中间概率
+    score : {np.array}, shape (number of samples, number of states), intermediate probabilities in the Viterbi algorithm
 
-    path : {np.array}，维度为(样本数)，最终结果表示每个样本的隐藏状态
+    path : {np.array}, shape (number of samples), final hidden state for each sample
     '''
     sample_num, state_num = obs.shape[0], init_prob.shape[0]
     backp = np.empty((sample_num, state_num), dtype=np.intp)

@@ -1,6 +1,6 @@
 # -*- coding: UTF-8 -*-
 '''
-此脚本用于定义线性回归模型
+This script defines a linear regression model
 '''
 
 
@@ -9,7 +9,7 @@ from utils import Scalar
 
 def mse(errors):
     '''
-    计算均方误差
+    Calculate Mean Squared Error
     '''
     n = len(errors)
     wrt = {}
@@ -29,25 +29,25 @@ class Linear:
     
     def __init__(self):
         '''
-        定义线性回归模型的参数：a, b
+        Define the linear regression model parameters: a, b
         '''
         self.a = Scalar(0.0, label='a')
         self.b = Scalar(0.0, label='b')
 
     def forward(self, x):
         '''
-        根据当前的参数估计值，得到模型的预测结果
+        Calculate model predictions using the current parameter estimates
         '''
         return self.a * x + self.b
     
     def error(self, x, y):
         '''
-        当前数据的模型误差
+        Model error on the current data
         '''
         return y - self.forward(x)
 
     def string(self):
         '''
-        输出当前模型的结果
+        Output the current model results
         '''
         return f'y = {self.a.value:.2f} * x + {self.b.value:.2f}'
