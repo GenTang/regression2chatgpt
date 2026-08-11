@@ -3,7 +3,7 @@
 通过前面章节的介绍，我们已经掌握了人工智能相关的基本知识和工程实践经验，并有足够的能力来深入研究这一领域最引人注目的前沿——**大语言模型**（Large Language Model，LLM）。大语言模型产品中最著名的当属ChatGPT。下面的图就展示了些经典的ChatGPT应用场景。
 
 <p align="center">  
-<img width="600" alt="chatgpt_example" src="chatgpt_example">
+<img width="600" alt="chatgpt_example" src="../assets/images/chatgpt_example_zh.png">
 </p>
 
 
