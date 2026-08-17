@@ -1,5 +1,7 @@
 # 《解构大语言模型：从线性回归到通用人工智能》配套代码
 
+[在线阅读](https://gentang.github.io/zh/books/deconstructing_LLM/)
+
 购买地址：[京东](https://item.jd.com/14596264.html)
 
 另外，本书还配套免费的视频课程：[B站](https://space.bilibili.com/417265639/channel/collectiondetail?sid=3138772) 
