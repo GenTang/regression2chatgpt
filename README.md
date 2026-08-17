@@ -1,5 +1,7 @@
 # Companion Code for *Deconstructing Large Language Models: From Linear Regression to Artificial General Intelligence*
 
+[Online Book](https://gentang.github.io/en/books/deconstructing_LLM/)
+
 ## Introduction
 
 Well-designed implementations of classic artificial intelligence models are readily available in third-party open-source libraries, and using them is not difficult. For engineering reasons, however, these libraries introduce so many layers of abstraction and implementation details that the core structure of a model can be hard to understand. To help readers grasp the underlying principles, this book devotes considerable effort to reimplementing the essential parts of each model and annotating them in detail. Describing a subtle algorithm in human language can take a great deal of space and still fail to convey it clearly. Reading the code, by contrast, often makes the idea intuitive and transparent.
